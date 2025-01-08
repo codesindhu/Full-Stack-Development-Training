@@ -1,0 +1,68 @@
+Concepts covered : Git, GitHub, project adding to repo, Merging, collaboration
+
+
+Git Hub 
+-->used to store and manage the data
+-->it is a type of cloud
+
+Git
+--> it used to track the code in a git hub
+--> version controller
+
+
+Git-Bash
+
+Step 1: install git-bash
+Write command in:
+Command Prompt or VS-code or git-bash
+
+How to install the Git-bash 
+Open Browser-->type "Git SCM download" enter --> Downloads-Git click --> Windows--> Download for Windows-->click here to download
+****Double click on Downloaded Git -->Next-->C-Drive path(keep it as it is) NEXT-->select Components Select desktop icon  next-->click all next only-->install-->Finish***
+Open Git bash from desktop--> enter command "git --version"-->check whether git is installed or not
+
+						For converting untracked to tracked files from vscode
+add files to git: command : git add file-name(single file in folder) or git add .(all files in folder)
+from the vscode-->using the local repo to convert(untracked files-create, update, delete to tracked files(command : git add file-name or git add .  git commint -m "message")--->GitHub
+committing the command : git commit -m "message"
+
+							To send the tracked files to the git hub
+
+create a repo---> add http path of repo to the local repo -->and add tracked files to GitHub repo
+command to add http path: git remote add origin http-path
+command to add tracked files: git push -u origin main/master(-u stands for unstream means it uploads or push all files to GitHub repo byte by byte)
+
+
+
+Git-Hub and Add files to repo 
+
+Step-1 : Create an account in Git-Hub
+Step-2 : Create a public repository
+Step-3 : Open Vscode and open terminal in vs code
+Step-4 : Initializate git in a terminal 
+	 command : git init
+Step-5 : Configure user-name and email to GitHub
+	 Command : git config --global user.name "codesindhu"
+		   git config --global user.gmail "jyosula.sindhura@gmail.com"
+Step-6 : add remote url to local repo
+	 Command : git remote add origin https-repolink(https://github.com/codesindhu/Sunle-Music-Player-MERN-Application.git)https://github.com/codesindhu/Full-Stack-Development-Training.git
+Step-7 : Convert untracked to tracked files and add to GitHub
+	 Command : git add .
+	 	   git commit -m "my new project"
+		   git push -u origin master
+
+			TO PULL FILES FROM REPO 
+Command : git pull origin folder-name  ex:- git pull origin main
+
+
+
+										:::: MEREGE OPERATION ::::
+Merge more than one branch 
+
+---> create a branch, command : git branch branch-name
+---> check branch is created or not, command : git branch
+---> shift b/w one branch to another, command : git checkout branch-name(branch u want to shift)
+---> convert untracked to tracked files, command : git add . , git commit -m "message" , git push -u origin branch-name
+NOTE : WHILE MERGING BRANCH ALWAYS YOU SHOULD BE IN THE MASTER BRANCH
+---> shifting to master branch, command : git checkout branch(master)
+---> merging branches , command: git merge branch-name(dev1)

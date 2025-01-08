@@ -1,0 +1,7 @@
+Deployment Tools 
+
+firebase,
+Netlify,
+bit-bucket,
+git and GitHub,
+Gitlab

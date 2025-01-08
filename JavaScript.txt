@@ -1,0 +1,178 @@
+What is JavaScript ?
+It is a object-based programming language used to convert static page into dynamic page.it supports oops concepts
+
+How to Write JS ? 
+Two ways - internal way(inside html body using script tag and write js code in html file) and external way(separate file with .js extension linked to html with the help of script tag with attribute src inside the body)
+
+								Variables in JavaScript :
+-->it stores the data or value(datatypes)
+-->it is dynamic in nature(no need of mentioning datatypes) e.g.: var a =10 or var b ="allow"
+-->Scopes in variables :- 
+	global scope : declare var outside fun and can access inside the function,
+	local-scope/script scope: declare var inside the fun but cant access outside the function,
+	block-scope : declare variable inside the parenthesis.
+-->variables are divided into 3 types - 
+	var: if we declare variable using var then variable comes under global-scope,
+	let, const : if we declare variable using let or const then variable comes under local-scope.
+
+								Data types in JavaScript :
+--> it is a value used in a programming language
+	--Primitive datatypes : number, string, Boolean, undefined, null, big-int
+    --Non-primitive datatypes : class, object, array, functions, map, sets
+								Errors in JavaScript :
+Syntax Error, Range Error, Reference Error, Type Error
+
+								Operators in JavaScript : 
+-->It is a predefined Symbol used to perform specific operation.
+Types :-
+1)Arithmetic operators : +,-,*,/,%,++,--     
+ types of increment :                                   types of decrement :
+  post-increment 					  post-decrement
+	let a=10;						let c=10;
+	console.log(a);//10					console.log(c);//10
+	console.log(a++);//10					console.log(c--);//10
+	console.log(a++);//11					console.log(c--);//9
+
+  pre-increment						  pre-decrement
+	let b=20;						let d=20;
+	console.log(b)//20					console.log(d);//20
+	console.log(++b)//21					console.log(--d);//19
+	console.log(++b)//22					console.log(--d);//18
+
+2)Assignment operators(short-hand) : +=,-=,*=,/=,%=
+	short-hand meaning 
+		let m=10;
+		console.log(m=m+10);//20
+		console.log(m+=10);//20
+
+3)Logical operators    		   : AND(&&),OR(||),NOT(!)
+
+4)Relational operators 		   : <,>,<=,>=,==,===,!=
+  -->output will be in Boolean format for these operators
+	***Interview Question : Difference b/w ==(equals to) and ===(strictly equals to)***
+		Ans : == checks the values but === compares the datatypes also 
+			e.g.:
+			    console.log(5==5)   //True
+			    console.log(5=='5') //True
+
+			    console.log(5===5)  //True
+			    console.log(5==='5')//False
+NOTE : Always prefer === for validations in JavaScript
+
+5)Ternary operators    		   : 3operands
+   syntax :  (condition) ? true-statement : false-statement
+	e.g. : (5<10) ? console.log("hello") : console.log("hi")
+
+
+							Conditional Statements in JavaScript : 
+
+1)Simple-if : It accepts only a true statement
+  Syntax:					example:
+	if(condition){					if(5<10){
+		--True statement---				console.log("hello world");
+	}						}
+2)if-else   : 
+   Syntax:					example:
+	if(condition){					if(5<10){
+		--true statement--				console.log("hello world");
+	}else{						}else{
+		--false statement--				console.log("bye");
+	}						}
+3)else-if-ladder :
+   syntax:					example:
+	if(condition){					let a=20; let b=30; let c=40;
+		--statement to execute--		if(a>b && a>c){
+	}else if(condition){					console.log("a is greatest");
+		--statement to execute--		}else if(b>a && b>c){
+	}else if(condition){					console.log("b is greatest");
+		--statement to execute--		}else{	
+	}else{							console.log("c is greatest");
+		--statement to execute--		}
+	}							
+4)Switch :
+   syntax :					example:
+	switch(condition){				let n=1;
+		case:					switch(n){
+		{						case1:
+								{
+		}							console.log("Sunday");
+		break;						}
+		case:						break;
+		{						case2:
+								{
+		}							console.log("Monday");
+		break;						}
+		default{					break;
+								default{
+		}							console.log("Invalid");
+	}							}
+							}//output : Sunday
+
+
+							Looping Statements in JavaScript
+1)while loop : 
+-->it will iterate the statement until the condition become false
+	Syntax:								e.g.: let n=1;
+		while(condition){					      while(n<=5){
+			statement						   console.log(n);
+		}							           n++;
+									      }//1 2 3 4 5
+	***difference b/w while and do-while loop :  while loop by default it is having a zero iteration and do-while loop by default having a 1 iteration***
+2)do-while loop :
+-->it iterates set of instructions then it will checks condition. 
+	Syntax:								e.g.: let m=1;
+		do{							      do{
+		    statement							  console.log(m);
+		}while(condition)					      }while(m<=5)
+3)for loop:
+   syntax: for(initialization, condition, increment/decrement){            e.g.: for(let i=0;i<=5;i++){
+		statement							   console.log(i);
+	   }								      }//0 1 2 3 4 5
+4)for each loop :
+
+
+							Typecasting in JavaScript
+Implicit typecasting : converting of one type of datatype into another datatype by java script engine
+Explicit typecasting : converting of one type of datatype into another datatype by programmer
+
+								Functions in JavaScript(Programs in JS file)
+-->functions are first citizens in JavaScript
+-->functions are objects in JavaScript
+-->the main advantage of using the functions in JavaScript is code reusability i.e. write once call it multiple times  
+-->Types of Functions in JavaScript : 
+	1)Function declaration Statement (or) Pure Function (or) Named Function
+	2)Function expression 
+	3)Higher Order Function, Callback Function
+	4)Arrow Function
+	5)Nested Function  -->closure and lexical scope
+	6)IIFE(Immediate Invoking Function Expression)
+-->Return Keyword : 
+	-- it will stop execution of the function and control will be given to caller(programmer)
+	-- hoisting(we can call the function before function declaration) is possible 
+	
+
+1)Function declaration Statement (or) Pure Function (or) Named Function :-
+	--> Set of Instruction or block of code used to perform a specific task
+	Syntax : 
+		 function fun-name(parameters,....)
+		 {
+			//it is having local-scope
+		 }
+		 fun-name(arguments,...)
+	-->Return Keyword : 
+		-- it will stop execution of the function and control will be given to caller(programmer)
+		--* hoisting(we can call the function before function declaration) is possible *
+
+2)Function Expression : 
+	-->Assigning Function as a value to one variable is called function expression
+	-->it is used to a perform specific task 
+	-->anonymous function : a function without a name
+	-->to call anonymous function :consider it as a value and assign to a variable. 
+ e.g. : let c = function()
+		{
+		    console.log("hi")
+		}
+	c();//hello
+			***difference b/w function declaration and function expression***
+-->hoisting is not possible in function expression
+-->function expression it is not having function name(anonymous function) so it is assigned to variable
