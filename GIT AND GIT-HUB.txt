@@ -43,9 +43,9 @@ Step-4 : Initializate git in a terminal
 	 command : git init
 Step-5 : Configure user-name and email to GitHub
 	 Command : git config --global user.name "codesindhu"
-		   git config --global user.gmail "jyosula.sindhura@gmail.com"
+		   git config --global user.email "jyosula.sindhura@gmail.com"
 Step-6 : add remote url to local repo
-	 Command : git remote add origin https-repolink(https://github.com/codesindhu/Sunle-Music-Player-MERN-Application.git)https://github.com/codesindhu/Full-Stack-Development-Training.git
+	 Command : git remote add origin https://github.com/codesindhu/Sunle-Music-Player-MERN-Application.git   https://github.com/codesindhu/GardenGuru-WebDev.git
 Step-7 : Convert untracked to tracked files and add to GitHub
 	 Command : git add .
 	 	   git commit -m "my new project"
