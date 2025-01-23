@@ -189,8 +189,14 @@ e.g. : function main(a){
        main(function(){
 	})
 
-4)Arrow Function
+Closure
+-->the binding of child function to the parent-function is called closure or the binding of child-function lexical-scope to the parent function disadvantage
+-->memory wastage- when ever we call the child function multiple times, multiple times closure will be created in heap area.
+-->if i want to call child function multiple times the parent function is important
 
+
+4)Arrow Function
+	syntax : () =>{}
 5)Nested Function
 
 
@@ -209,6 +215,81 @@ e.g. : function main(a){
 				Arrays in JavaScript
 -->it is used to store data of an different data-types. so it is heterogenous
 -->creating using declaration way
-	syntax : let arr = [10,'hello',True]
-		 console.log(arr);
+	syntax : let arr = [10,'hello',True] 
+		 console.log(arr);  // [10,hello,true]
 -->creating using new keyword
+	e.g. : let arr1 = new Array(10,20,"hello",true); 
+	       console.log(arr1);  //[10,20,hello, true]
+
+				Objects in JavaScript
+-->used to store the data in the form of key and value pair
+-->creating using declaration way
+	e.g. : let obj = { 
+    			name : 'abhi',
+    			id : 1,
+    			arr : [10,20,true],
+    			boolean : true,
+    			demo : function()
+       				{
+          				console.log("hello");
+        			}
+		}
+		console.log(obj);
+		console.log(obj.name);//abhi
+		console.log(obj.arr);
+		obj.demo()  //hello
+--> creating by using constructor function(it is used to create object).
+	e.g. : function obj1(name,id)
+		{
+    			this.name = name;
+    			this.id = id;
+		}
+		let p1 =new obj1('abhi',1);
+		console.log(p1.name);
+		console.log(p1.id);
+
+
+
+Note : Synchronous-one function to wait until another function complete its execution
+						Asynchronous Function
+-->making a way for the other function to execute first.
+--> two methods :  1)setTimeOut(cgf, delay-time) 2)setInterval(cbf, delay-time)
+-->these both methods present inside window object
+
+window.setTimeout(() => {
+	console.log("i am setTimeOut");
+},5000)
+
+window.setInterval(()=>{
+	console.log("i am setInterval");
+},3000)
+
+				:: Promise ::
+-->used to look after async function
+-->is an object.
+	Syntax:-
+		new Promise((resolve, reject)=>{
+		      -----async function----
+		})
+		.then(cbf)
+		.catch(cbf)
+
+	3-phases 
+1.pending phase: either promise will be resolve or reject
+2.resolve/fulfill phase: when asynchronous function successful
+                         -then method(higher order method)- .then(cbf)
+3.reject phase: when asynchronous function is not successful
+                         -catch method- .catch(cbf)
+
+			:: Promise Chaining::
+-->using multiple then methods is called promise chaining
+-->it increases the complexity
+-->to avoid the promise chaining we use "async and await" keyword
+
+
+				DOM(Document object Model)
+-->DOM is an Object
+-->DOM is an API provided by Window
+-->it is having a root element(Document is root element of DOM)
+-->it is having lifespan --the lifespan is page-reload ...whenever the page is reloaded the DOM is destroyed and new DOM is created
+-->main purpose of DOM : it is used to create, delete, update an element and it is used to provide style for an element

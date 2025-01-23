@@ -54,7 +54,8 @@ Step-7 : Convert untracked to tracked files and add to GitHub
 			TO PULL FILES FROM REPO 
 Command : git pull origin folder-name  ex:- git pull origin main
 
-
+                        TO GET CURRENT ORIGIN
+Command : git remote get-url origin
 
 										:::: MEREGE OPERATION ::::
 Merge more than one branch 
