@@ -15,7 +15,7 @@
 // }
 // sample()
 
-//promise
+//promise keyword
 function main(m,n){
    new Promise((resolve,reject)=>{
     setTimeout(() => {

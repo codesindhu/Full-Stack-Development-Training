@@ -42,9 +42,9 @@ function largestNumber(){
     let c= Number(window.prompt("Enter c value:"));
     if(a>b && a>c){
         console.log("A is Largest Number");
-    else if(b>a && b>c){
+    }else if(b>a && b>c){
         console.log("B is Largest Number");
-    else{
+    }else{
         console.log("C is Largest Number");
     }
 }

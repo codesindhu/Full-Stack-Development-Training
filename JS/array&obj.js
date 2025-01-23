@@ -1,5 +1,5 @@
 
-                        //Creation of array
+ //Creation of array
 
 //decleration way
 let arr = [10,20,"hello",true];

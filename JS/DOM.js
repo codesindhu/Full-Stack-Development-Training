@@ -29,3 +29,11 @@ for (let i = 0; i < anchors.length; i++) {
     anchors[i].style.color = 'blue';
     anchors[i].style.fontWeight = 'bold';
 }
+
+// indirect access methods
+// 1)documet.getElementById("value")
+// 2)document.getElementByClassName("value")
+// 3)document.getElementsByTagName("value")
+// 4)document.getElementsByName("value")
+// 5)document.querySelector("value")
+// 6)document.querySelectorAll("value")

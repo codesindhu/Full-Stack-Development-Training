@@ -293,3 +293,11 @@ window.setInterval(()=>{
 -->it is having a root element(Document is root element of DOM)
 -->it is having lifespan --the lifespan is page-reload ...whenever the page is reloaded the DOM is destroyed and new DOM is created
 -->main purpose of DOM : it is used to create, delete, update an element and it is used to provide style for an element
+
+indirect access in dom (methods in dom)
+1)documet.getElementById("value")
+2)document.getElementByClassName("value")
+3)document.getElementsByTagName("value")
+4)document.getElementsByName("value")
+5)document.querySelector("value")
+6)document.querySelectorAll("value")

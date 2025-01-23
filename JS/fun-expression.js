@@ -11,7 +11,7 @@ let operator = function(a){
  console.log(arguments[1]);
  console.log(arguments[2]);
 }
-operator(10,20,30); // 10,20,30
+operator(10,20,30); // 10,20,30;
 
 //Task :  Create a function expression arthimetic operation for 3 numbers and find the largest of 3 numbers input should be taken from end user.
 let arthimetic = function(){
