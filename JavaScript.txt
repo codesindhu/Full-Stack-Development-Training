@@ -301,3 +301,7 @@ indirect access in dom (methods in dom)
 4)document.getElementsByName("value")
 5)document.querySelector("value")
 6)document.querySelectorAll("value")
+
+**Difference between query Selector and query Selector All**
+QS : value should be passes using css symbol , """it will return reference of first element"""
+QSA : value should be passes using css symbol, """it will return reference of node-list"""
