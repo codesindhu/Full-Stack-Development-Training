@@ -1,0 +1,86 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #7dffba, #a4c6ff); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.login-container {
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 400px;
+    color: #333; /* Text color */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.login-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #6a11cb; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5); /* Subtle glow */
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a465e8; /* Primary button color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #2575fc; /* Lighter shade on hover */
+}
+
+.login-container button:active {
+    transform: scale(0.98); /* Slight shrink effect on click */
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+
+    .login-container input,
+    .login-container button {
+        font-size: 14px;
+    }
+}
