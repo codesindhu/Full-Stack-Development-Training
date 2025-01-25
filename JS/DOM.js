@@ -89,3 +89,8 @@ console.log(e[0]);
 let e1 = document.querySelectorAll('.demo1');
 console.log(e1); // NodeList of elements with class "demo1"
 console.log(e1[1]);
+
+//first way of creating event
+function event1(){
+    console.log("Button clicked");
+}

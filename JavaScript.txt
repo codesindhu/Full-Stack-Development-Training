@@ -314,3 +314,4 @@ types of events :  1)Keyboard-event 2)mouse-event 3)form-event 4) pointer-event
 2)mouse events : onmouseover,onmouseleave,ondbclick
 3)form events : input,focus,blur
 4)pointer events : click event
+--->events can be created in 3ways
