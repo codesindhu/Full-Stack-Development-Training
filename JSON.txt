@@ -1,0 +1,26 @@
+							API
+                                                      -------
+
+-->API is used to establish communication b/w two applications
+-->there are two types of API's 
+	1)SOAP API(source object Access protocol)--- HTTP,XHR(AJAX)--it is outdated
+	2)REST API(representational state transfer)--- JSON--json supports more than 21 programming languages
+
+                                            JSON(JavaScript object Notation)
+                                         ---------------------------------------
+--> it is plain text file where data will be stored in the form of key and value pair where all the keys will be enclosed with double quotes.
+-->How to create JSON :
+	Step 1 : create a .json file
+	Step 2 : to create json we cannot use undefined and function datatype
+		 in json we will store the data in the form of array(object) i.e., [{}, {}, {}]
+-->Methods of JSON
+1)stringify() : it will convert object to json type.
+2)parse() :  it will convert json to object format.
+
+
+-->Fetching JSON or API in three ways
+1) By using fetch() method
+2) By using Ajax
+3) By using Axios
+
+NOTE : when it given a Array buffer as response like 404 : array buffer means that response is only understood by the meachine 

@@ -1,0 +1,13 @@
+Framework is a collection of libraries
+
+            React JS
+          ------------ 
+-->React is a library
+-->it is used to develop single page application
+-->it is a component based application(components are reusable)
+-->react is declarative
+-->it is introduced in the year 2013 by meta(facebook) jordan walke(developer)
+-->before react backbone.js and ember.js are Frameworks used these are first Frameworks of javascript
+**-->react will render component on the webpage without the page reload**(like ajax)
+
+

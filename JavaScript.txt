@@ -4,7 +4,8 @@ It is a object-based programming language used to convert static page into dynam
 How to Write JS ? 
 Two ways - internal way(inside html body using script tag and write js code in html file) and external way(separate file with .js extension linked to html with the help of script tag with attribute src inside the body)
 
-					Variables in JavaScript :
+					Variables in JavaScript 
+                                      --------------------------
 -->it stores the data or value(datatypes)
 -->it is dynamic in nature(no need of mentioning datatypes) e.g.: var a =10 or var b ="allow"
 -->Scopes in variables :- 
@@ -15,14 +16,16 @@ Two ways - internal way(inside html body using script tag and write js code in h
 	var: if we declare variable using var then variable comes under global-scope,
 	let, const : if we declare variable using let or const then variable comes under local-scope.
 
-						Data types in JavaScript :
+						Data types in JavaScript 
+                                              ----------------------------
 --> it is a value used in a programming language
 	--Primitive datatypes : number, string, Boolean, undefined, null, big-int
     --Non-primitive datatypes : class, object, array, functions, map, sets
 							Errors in JavaScript :
 Syntax Error, Range Error, Reference Error, Type Error
 
-						Operators in JavaScript : 
+						Operators in JavaScript
+                                              ----------------------------
 -->It is a predefined Symbol used to perform specific operation.
 Types :-
 1)Arithmetic operators : +,-,*,/,%,++,--     
@@ -64,7 +67,8 @@ NOTE : Always prefer === for validations in JavaScript
 	e.g. : (5<10) ? console.log("hello") : console.log("hi")
 
 
-						Conditional Statements in JavaScript : 
+						Conditional Statements in JavaScript
+                                              ----------------------------------------
 
 1)Simple-if : It accepts only a true statement
   Syntax:					example:
@@ -110,6 +114,7 @@ NOTE : Always prefer === for validations in JavaScript
 
 
 					Looping Statements in JavaScript
+                                      ------------------------------------
 1)while loop : 
 -->it will iterate the statement until the condition become false
 	Syntax:								e.g.: let n=1;
@@ -132,10 +137,12 @@ NOTE : Always prefer === for validations in JavaScript
 
 
 						Typecasting in JavaScript
+                                              ----------------------------
 Implicit typecasting : converting of one type of datatype into another datatype by java script engine
 Explicit typecasting : converting of one type of datatype into another datatype by programmer
 
 						Functions in JavaScript(Programs in JS file)
+                                             --------------------------------------------------
 -->functions are first citizens in JavaScript
 -->functions are objects in JavaScript
 -->the main advantage of using the functions in JavaScript is code reusability i.e. write once call it multiple times  
@@ -213,6 +220,7 @@ Closure
 
 
 				Arrays in JavaScript
+                              ------------------------
 -->it is used to store data of an different data-types. so it is heterogenous
 -->creating using declaration way
 	syntax : let arr = [10,'hello',True] 
@@ -222,6 +230,7 @@ Closure
 	       console.log(arr1);  //[10,20,hello, true]
 
 				Objects in JavaScript
+                              ------------------------
 -->used to store the data in the form of key and value pair
 -->creating using declaration way
 	e.g. : let obj = { 
@@ -251,7 +260,9 @@ Closure
 
 
 Note : Synchronous-one function to wait until another function complete its execution
+
 						Asynchronous Function
+                                              -------------------------
 -->making a way for the other function to execute first.
 --> two methods :  1)setTimeOut(cgf, delay-time) 2)setInterval(cbf, delay-time)
 -->these both methods present inside window object
@@ -281,13 +292,15 @@ window.setInterval(()=>{
 3.reject phase: when asynchronous function is not successful
                          -catch method- .catch(cbf)
 
-			:: Promise Chaining::
+:: Promise Chaining::
+-----------------------
 -->using multiple then methods is called promise chaining
 -->it increases the complexity
 -->to avoid the promise chaining we use "async and await" keyword
 
 
 				DOM(Document object Model)
+                              ------------------------------
 -->DOM is an Object
 -->DOM is an API provided by Window
 -->it is having a root element(Document is root element of DOM)
@@ -308,10 +321,26 @@ QSA : value should be passes using css symbol, """it will return reference of no
 
 
 :::: EVENT IN DOM :::
+---------------------
 --> it is an action performed by end user on a webpage .
 types of events :  1)Keyboard-event 2)mouse-event 3)form-event 4) pointer-event
 1)Keyboard events : Key-up ,key-down,key press 
 2)mouse events : onmouseover,onmouseleave,ondbclick
 3)form events : input,focus,blur
 4)pointer events : click event
---->events can be created in 3ways
+--->events can be created in 3ways(program file)
+
+::: Modifying/Manipulation of DOM :::
+-------------------------------------
+
+-->updating or modifying a DOM.
+
+method 1 : createElement() 
+
+step 1 : create element using createElement()
+e.g. :- let a = document.createElement("h1")
+	console.log(a)//<h1></h1>
+	a.textContent = "hello" //<h1>hello</h1>
+
+step 2 : append element to parent element using append()/appendChild()
+e.g. :- document.body.appendChild(a)
