@@ -9,5 +9,153 @@ Framework is a collection of libraries
 -->it is introduced in the year 2013 by meta(facebook) jordan walke(developer)
 -->before react backbone.js and ember.js are Frameworks used these are first Frameworks of javascript
 **-->react will render component on the webpage without the page reload**(like ajax)
+-->react uses MVC(model view contoller) architecture 
+-->React Dependency : react, react-dom,react-scripts are the three dependencies which are installed when we create a react application
+        i)react:
+                -it uses createElement()
+                -all-hooks comes under react
+        ii)react-dom : used to create virtual-dom
+        iii)react-scripts : it is used to run,debug,test.,eject the react application
+**-->react uses diffing algorithim(one to one mapping is done by this)**
+
+How to create React 
+---------------------
+
+two-ways : 1)CDN way(needs internet) 2)Node Way 
+we use node Way
+2a)NPM(node package manager)  : 
+                            -->it is used to install,update,delete packages in js.
+                            -->packages will be installed globally
+commands :            
+            npm install -g create-react-app
+            create-react-app appname
+
+            //to install latest version of react
+            npm create vite@latest
+
+2b)NPX(node package executer) :
+                                -->used to execute packages without installing
+                                -->no need to install packages globally
+command  :  npx create-react-app appname
 
 
+		React folder structure
+		--------------------
+node modules:
+--> will store all packages and third party library.
+    babel
+
+src folder:-
+-->It is a main folder used for creating componenets.
+
+index.html file:-
+-->It is a root file.
+
+eslint (ecma script lint):-
+-->used for debug purpose.
+
+package.json file:-
+-->used to store all dependency and
+third-party-library.
+
+
+
+COMPONENTS IN REACT
+**************************
+
+-->componenets are basic building blocks in react.
+-->componenets are reusable.
+-->Components are two types:-
+                        a)class based componenets
+                        b)function based componenets/presentational/dumb componenets
+
+1)class based Component
+-->It is es6 class in json
+-->It uses render() method
+    render() used to render elements/componenet on the web-page
+-->It uses react-life-cycle.
+-->It is statefull Component.
+-->In this we consists of constructors.
+-->Constructor is used to store data.
+-->It uses extend keyword.
+
+import React from 'react'
+class demo extends React.Component {
+    render(){
+        return <h1>i an class based Component</h1>
+    }
+}
+export default demo;
+
+
+2)function based componenet
+-->It is pure function.
+-->it doesn't have any react-life-cycle.
+-->it doesn't uses render() method.
+-->It is a stateless component
+    after react 16.8 FBC becomes statefull componenet because of hooks.
+
+import React from 'react'
+
+function demo1()
+{
+    return <h1>iam function based component</h1>
+}
+export default demo1;
+
+import React from 'react'
+let demo2 = () => {
+    return <h1>iam function based component</h1>
+}
+export default demo2;
+
+
+
+  ways of creating html
+--------------------------
+
+1)html :  <h1>hello-world</h1>
+
+2)js(dom) : 
+let h1 = document.createElement("h1")
+console.log(h1)
+h1.textContent = "hello-world"
+
+3)react : 
+ (i)using React.createElement("tag-name","null or {id:"demo"}","Content")
+
+ eg: - 
+        React.createElement("h1","null","hello")
+        React.createElement("ol","{id:"demo"}","React.createElement("ol","null","item1")")
+ (ii) JSX (javascript xml)
+ -->it is used to create html in react.
+ -->it neither string nor html
+
+ rules of JSX
+ ************
+ 1)all the should be en-closed
+  eg:- </h1>
+
+ 2)if there are more than one element it should wrapped inside parent element or fragment
+ eg:-
+ <div>(it consumes memory of div)
+    <h1>hello</h1>
+    <h2>hello-world</h2>
+ </div>
+
+ <> ---> fragment used to save memory in virtual-dom(it will not create any memory for fragment)
+    <h1>hello</h1>
+    <h2>hello-world</h2>
+ </> 
+
+ 3)use {} brackers for writing expressions.
+  eg:- <h1>{5+5}</h1>
+
+
+  Props in REACT
+-----------------
+-->props stands for properties 
+-->props are used to send data from one component to another componenet
+-->props are uni-direction
+-->props are object
+-->props are immutable(read-only)
