@@ -78,6 +78,7 @@ COMPONENTS IN REACT
 -->In this we consists of constructors.
 -->Constructor is used to store data.
 -->It uses extend keyword.
+//in the class based componenet we are not allowed to use any variables (let,var,const)
 
 import React from 'react'
 class demo extends React.Component {
@@ -159,3 +160,7 @@ h1.textContent = "hello-world"
 -->props are uni-direction
 -->props are object
 -->props are immutable(read-only)
+
+                        ****Interview Question****
+Assignment 4 :  1)What is props drilling and how to avoid it?
+                2)What is default props?   //with practical examples
