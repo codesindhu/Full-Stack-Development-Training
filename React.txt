@@ -156,11 +156,28 @@ h1.textContent = "hello-world"
   Props in REACT
 -----------------
 -->props stands for properties 
--->props are used to send data from one component to another componenet
+-->props are used to send data from one component to another component
 -->props are uni-direction
 -->props are object
 -->props are immutable(read-only)
 
+
                         ****Interview Question****
 Assignment 4 :  1)What is props drilling and how to avoid it?
                 2)What is default props?   //with practical examples
+
+
+
+   State in REACT
+--------------------
+-->state is used to store the data in the same component and update the data in the same component
+-->states are mutable(can be read and write)
+-->Syntax :- 
+             let [inital-value, function]=useState(inital-value)
+
+
+   Ways of Using Styles in REACT
+-----------------------------------
+1)in-line way
+2)globally clas
+3)External Way(important&preferred)
