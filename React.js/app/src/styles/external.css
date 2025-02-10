@@ -1,0 +1,13 @@
+details{
+    border: 2px solid;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+}
+summary{
+    list-style: none;
+}
+details:hover{
+    cursor: pointer;
+}

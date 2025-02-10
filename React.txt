@@ -175,9 +175,33 @@ Assignment 4 :  1)What is props drilling and how to avoid it?
 -->Syntax :- 
              let [inital-value, function]=useState(inital-value)
 
+Forms in React
+---------------
+1)controlled form 
+-->uses useState and onChange event to fetch data from form 
+2)Uncontrolled Form
+-->uses useRef hook to fetch data from the form 
 
    Ways of Using Styles in REACT
 -----------------------------------
 1)in-line way
 2)globally clas
 3)External Way(important&preferred)
+
+useRef hook in react
+--------------------
+-->ref stands for reference
+-->useRef hook uses Real-DOM 
+-->useRef used in Uncontrolled form
+-->useRef is having a property called current
+-->useRef is having a keyword called 'ref' keyword
+note: useRef will returns an object that object consists of current property
+
+Syntax :- 
+import useRef form 'react'
+let/var/const indentifier = useRef(inital-value)
+
+  List and keys in REACT
+**************************
+-->list is used to interate an array of object using map() method
+-->keys are used to keep track of an element,by using keys we can understand which element is created,updated,deleted.

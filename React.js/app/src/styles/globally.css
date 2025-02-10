@@ -1,0 +1,146 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva,  sans-serif;
+}
+
+#nav{
+    /* border: 2px solid; */
+    height: 70px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#sub-nav{
+    /* border: 2px solid red; */
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+#sub-nav span svg{
+    fill: #fff;
+    height: 1.7em;
+}
+
+#sub-nav ol{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+
+#sub-nav ol li:hover{
+    color: #1ed760;
+    cursor: pointer;
+}
+
+
+#main{
+    /* border: 2px solid red; */
+    height: 60vh;
+    background-color: #b49bc8;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 100%;
+}
+
+#main h1{
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+#main h2{
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#main button{
+    margin-top: 40px;
+    padding: 16px 33px;
+    border-radius: 50px;
+    border: none;
+    text-transform: capitalize;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#main button:hover{
+    transform: scale(1.1);
+}
+
+#main p{
+    margin-top: 40px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+#main p  a{
+    color: #000;
+}
+
+#main1{
+    border: 2px solid red;
+    height: 500px;
+    position: absolute;
+    top: 505px;
+    width: 100%;
+}
+
+#main1 h1{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 35px;
+    font-family: 900;
+}
+
+#sub-main{
+    border: 2px solid green;
+    height: 360px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.demo{
+    border: 2px solid blue;
+    height: inherit;
+    width: 400px;
+    text-align: center;
+}
+
+.demo img{
+    padding-top: 40px;
+    height: 10em;
+}
+
+.demo p{
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.demo p + p{
+   font-size: 16px;
+   font-weight: 400;
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
