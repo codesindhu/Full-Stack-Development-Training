@@ -199,9 +199,71 @@ note: useRef will returns an object that object consists of current property
 
 Syntax :- 
 import useRef form 'react'
-let/var/const indentifier = useRef(inital-value)
+let/var/const identifier = useRef(inital-value)
 
   List and keys in REACT
-**************************
+--------------------------
 -->list is used to interate an array of object using map() method
 -->keys are used to keep track of an element,by using keys we can understand which element is created,updated,deleted.
+
+
+
+-->props drilling :sending data from the parent componenet to nested child component
+-->why to avoid : Code Maintainability, Component Coupling, Scalability Issues, Increased Boilerplate:
+-->how to avoid props drilling : 
+1)useContext hook
+2)HOC(higher order componenet)
+3)Redux
+
+****useContext hook in REACT**** Interview
+-----------------------------
+-->useContext : it is used to pass or share data from one componenet to multiple componenet without passing an props.
+-->it is used to avoid props drilling
+
+Syntax:-
+ 
+ step1 : create a context and export it
+ import React from 'react'
+ export var/const/let identifier-name = React.createContext()
+
+ step 2 : use provider to pass an value.
+<identifier-name.provider value={}>
+    <Child componenet/>
+</identifier-name.provider>
+
+step 3 : use consumer to consume the value given by provider
+<identifier-name.consumer>
+    {
+        cbf
+    }
+</identifier-name.consumer>
+
+
+2) using useContext hook:: Syntax:  let new-identifier-name = useContext(identifier-name in step1)
+  *****************
+
+
+  useEffect hook in REACT (important)
+--------------------------------------
+-->it is used to provide side effect for function based componenet
+-->in react wwe can tell to our componenet to do something after render
+
+advantages of useEffect: 
+o used for operating dom
+o used for timer
+o used for fetching data
+o it is used to avoid the react life-cycle.
+    o> we can avoid componenetDidMount
+    o> we can avoid componenetDidUpdate
+    o> we can avoid componentWillUnMount
+
+Syntax :- 
+
+import {useEffect} from 'react'
+
+useEffect(cbf, dependency)
+
+dependency (3-ways)
+1)no dependency : componenet will render infinte
+2)empty dependency : componenet will render only once 
+3)dependency with value(props, state) : componenet will render when value changes 
