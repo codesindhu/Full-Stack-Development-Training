@@ -246,7 +246,7 @@ step 3 : use consumer to consume the value given by provider
   useEffect hook in REACT (important)
 --------------------------------------
 -->it is used to provide side effect for function based componenet
--->in react wwe can tell to our componenet to do something after render
+-->in react we can tell to our componenet to do something after render
 
 advantages of useEffect: 
 o used for operating dom

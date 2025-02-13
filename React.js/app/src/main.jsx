@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import CompA from './useContext/CompA'
+import UseEffect from './useEffect/UseEffect'
 // import Ref from './useRef/Ref'
 // import List from './list-keys/List'
 // import './index.css'
@@ -37,6 +38,7 @@ createRoot(document.getElementById('root')).render(
     {/* <External/> */}
     {/* <Ref/> */}
     {/* <List/> */}
-    <CompA/>
+    {/* <CompA/> */}
+    <UseEffect/>
   </StrictMode>,
 )
