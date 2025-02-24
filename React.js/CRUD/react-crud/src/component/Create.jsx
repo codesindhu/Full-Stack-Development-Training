@@ -31,7 +31,7 @@ const Create = () => {
         role : <input type="text" name="" id="" onChange={(e) => setRole(e.target.value) } />
         <br />
         <button onClick={create}>submit</button>
-        <button> <Link to="/">Back to Home</Link> </button>
+
        </form>
     </div>
   )

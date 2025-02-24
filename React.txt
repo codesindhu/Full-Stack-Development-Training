@@ -215,14 +215,13 @@ let/var/const identifier = useRef(inital-value)
 2)HOC(higher order componenet)
 3)Redux
 
-****useContext hook in REACT**** Interview
+1)****useContext hook in REACT**** Interview
 -----------------------------
 -->useContext : it is used to pass or share data from one componenet to multiple componenet without passing an props.
 -->it is used to avoid props drilling
 
 Syntax:-
- 
- step1 : create a context and export it
+      1) step1 : create a context and export it
  import React from 'react'
  export var/const/let identifier-name = React.createContext()
 
@@ -239,8 +238,18 @@ step 3 : use consumer to consume the value given by provider
 </identifier-name.consumer>
 
 
-2) using useContext hook:: Syntax:  let new-identifier-name = useContext(identifier-name in step1)
-  *****************
+	2) using useContext hook:: Syntax:  let new-identifier-name = useContext(identifier-name in step1)
+  	  
+2)HOC(higher order component)
+-->it is an advance technique used to re-use the component logic
+-->it is an function which accepts another component as an argument and returns new component
+
+syntax: 
+	let newComponent = HigherOrderComponent(OriginalComponent)
+
+
+
+
 
 
   useEffect hook in REACT (important)

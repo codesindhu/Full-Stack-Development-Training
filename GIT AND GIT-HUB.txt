@@ -38,8 +38,8 @@ Git-Hub and Add files to repo
 
 Step-1 : Create an account in Git-Hub
 Step-2 : Create a public repository
-Step-3 : Open Vscode and open terminal in vs code
-Step-4 : Initializate git in a terminal 
+Step-3 : Open VS code and open terminal in vs code
+Step-4 : Initialize git in a terminal 
 	 command : git init
 Step-5 : Configure user-name and email to GitHub
 	 Command : git config --global user.name "codesindhu"
