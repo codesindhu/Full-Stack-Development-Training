@@ -1,0 +1,15 @@
+DB Queries
+**********
+
+1) mysql -u root -p 
+	used to connect to mysql database
+2) create database mruprojects;
+	automatically "mruprojects" database will create
+3) use mruprojects;
+	automatically we can switch to mruprojects database
+4) create table mobiles(id int primary key, pname varchar(20),pcost double,pimage varchar(200),pqty int);
+5) desc mobiles; 
+	to describe table
+6) insert into mobiles values(1,'Moblie1',10,'img-path of aws ',5),(2,'Mobile2',5,'img-path,20);
+
+7) select * form mobiles;

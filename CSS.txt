@@ -1,4 +1,0 @@
-  CSS Flex:
-  --------
-->Moving HTML Element with respect to x-axis (main axis) called as CSS Flex
-->convert blocklevel display to inline display using -- Display : flex;

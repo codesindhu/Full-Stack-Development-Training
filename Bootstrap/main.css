@@ -1,0 +1,12 @@
+.navbar{
+    background-color: rgb(255, 226, 226);
+}
+.carousel-item img{
+    height: 600px;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px;
+}

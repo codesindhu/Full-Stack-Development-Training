@@ -1,0 +1,9 @@
+Bootstrap:-
+----------
+
+->it is an open source frame work
+->was introduced by twitter(X)
+->mark otto and jacob developed bootstrap.
+->used to develop mobile application and it is responsive application
+->bootstrap framework : 
+    o html,css(SASS and LESS are pre-porcessor of css),.js(jquery and popper libraries) is used to develop 

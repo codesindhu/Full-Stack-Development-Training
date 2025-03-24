@@ -1,0 +1,41 @@
+*  CSS Flex:
+  --------
+-->Moving HTML Element with respect to x-axis (main axis) called as CSS Flex
+-->convert block level display to inline display using -- Display : flex;
+-->justify-content : to move horizontally
+-->align items : to move vertically
+-->gap : maintain gap
+
+
+Annotations :-
+---------------
+-->annotations are used to enhance class functionality 
+-->@RestController , @Id ,@Repository, @Service, @Entitiy, @Column 
+-->they should start with "@" symbol
+-->@RestController used to represent the controller in MVC
+-->@Service - used to represent the service layering in MVC
+-->@Entity - used to create the replica of table in Spring Boot environment
+-->@Id - used to represent primary key column
+-->@Column - used to represent table column 
+-->@Repository - used to represent JPA Repo in spring boot application
+
+
+eg:- 
+	@Entity
+	public class Mobiles{
+		@Id
+		@Column
+		private int id;
+		@Column
+		private String pname;
+		@Column
+		private double pcost;	
+		@Column
+		private String pimage;
+		@Column
+		private int pqty;
+			
+		setters & getters
+		toString()
+		Constroucter
+	}

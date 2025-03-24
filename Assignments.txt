@@ -1,9 +1,0 @@
-
-                   ****Interview Question****
-Assignment 4 :  1)What is props drilling and how to avoid it?
-                2)What is default props?   //with practical examples
-
-
-
-Spotify clone : https://www.spotify.com/in-en/student
-Cdnjs clone : https://cdnjs.com
